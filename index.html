@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section class="gradient-background d-flex flex-column">
+        <div class="container-fluid">
+            <!-- Navigation bar -->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-dark navbar-transparent d-flex flex-wrap align-items-center justify-content-between py-3">
+                <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none col-md-5 mb-2 mb-md-0">
+                    <img class="bi" src="images/code-slash.svg" width="40" height="32" alt="code-slash" role="img" aria-label="code-slash">
+                </a>
+                <button class="navbar-toggler navbar-dark d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                        <li class="nav-item">
+                            <a href="./index.html" class="btn btn-outline-light bold-btn active" role="button" data-bs-toggle="button" aria-pressed="true">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#project1">Frontend Projects</a></li>
+                                <li><a class="dropdown-item" href="#project2">Backend Projects</a></li>
+                                <li><a class="dropdown-item" href="#project3">Web Designs</a></li>
+                                <!-- Add more dropdown items as needed -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-end">
+                    <a href="images/your-cv.pdf" class="btn btn-outline-light me-2" download="My_CV.pdf">My CV</a>
+                    <button type="button" class="btn btn-light" onclick="window.location.href='mailto:rohitchanda2024@gmail.com';">Contact Me</button>
+                </div>
+            </nav>
+        </div>
+    
+        <!----Hero Section --------------->
+        <div class="d-flex flex-column justify-content-center w-100 flex-grow-1">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="container col-xxl-8 px-4">
+                    <div class="row flex-lg-row-reverse align-items-center g-5">
+                        <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="./images/hero-img1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="875" loading="lazy">
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <h1 class="display-5 lh-1 mb-3">
+                                <span class="text-black">Hi, I'm</span> <span class="text-white fw-bold">ROHIT,</span><br>
+                                <span class="text-white fw-bold">Web Designer-Developer</span> <span class="text-black">&</span> <br>
+                                <span class="text-white fw-bold">Content Writer</span>
+                            </h1>
+                            <p class="lead text-white">
+                                I design and develop stunning websites for businesses all over the world. If you require a modern and effective 
+                                website, send me an email. If we are a good fit, I will provide you with a time and cost estimate.
+                            </p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <button type="button" class="btn btn-outline-light btn-lg px-4 me-md-2" href="./project-overview.html">See My Work</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----services------------>
+    <section class="about d-flex flex-column justify-content-center w-100 flex-grow-1">
+        <div>
+            <h1 class="fw-bold text-body-emphasis mt-5" style="color: #614385;">My Services</h1>
+            <h3 class="">Innovative Solutions for a Digital World</h3>
+        </div>
+        <div class="carousel mb-4">
+            <div class="carousel-item" data-hover="hover-image1.png" id="item1">
+                <img src="./images/frontend.svg" class="carousel-image" alt="Image 1">
+                <div class="hover-content">UI/UX Designing</div>
+            </div>
+            <div class="carousel-item" data-hover="hover-image2.png" id="item2">
+                <img src="./images/backend.svg" class="carousel-image" alt="Image 2">
+                <div class="hover-content">Web Development</div>
+            </div>
+            <div class="carousel-item" data-hover="hover-image3.png" id="item3">
+                <img src="./images/Web-design.svg" class="carousel-image" alt="Image 3">
+                <div class="hover-content">Web Designing</div>
+            </div>
+            <div class="carousel-item" data-hover="hover-image4.png" id="item4">
+                <img src="./images/graphic-designer.svg" class="carousel-image" alt="Image 4">
+                <div class="hover-content">Graphics Designing</div>
+            </div>
+            <div class="carousel-item" data-hover="hover-image5.png" id="item5">
+                <img src="./images/SEO.svg" class="carousel-image" alt="Image 5">
+                <div class="hover-content">SEO Expert</div>
+            </div>
+        </div>
+    </section>
+    <!-----About Section--------------->
+    <section>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./images/Man2.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="200" height="300" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h3>About Me</h3>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">You Can Imagine <br>I Can Do</h1>
+                <p class="lead"><strong>Name:</strong> Rohit Chanda <br> <strong>Age:</strong>22 <br> <strong>Address:</strong> Kolkata, IN <br> <strong>Freelance:</strong>  Available <br> <strong>eMail:</strong>  rohitchanda2024@gmail.com</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2" href="./images/your-cv.pdf" download="My_CV.pdf">Download CV <img src="./images/download.gif" alt="download" height="30px" width="30px">
+                  </button>
+                  <button type="button" class="btn btn-outline-info btn-lg px-4" href="./about.html">More About Me <img src="./images/right-arrow.gif" alt="right-arrow" height="30px" width="30px"></button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    <!---Project ------------>
+    <section id="projects">
+        <div class="filter-container">
+            <button class="filter-button" data-filter="all">All</button>
+            <button class="filter-button" data-filter="category1">Category 1</button>
+            <button class="filter-button" data-filter="category2">Category 2</button>
+            <button class="filter-button" data-filter="category3">Category 3</button>
+        </div>
+    
+        <div class="card-container">
+            <div class="card category1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>Description for Card 1</p>
+                    <a href="#" class="redirect-button">Go to Link</a>
+                </div>
+            </div>
+            <div class="card category2">
+                <div class="card-content">
+                    <h3>Card 2</h3>
+                    <p>Description for Card 2</p>
+                    <a href="#" class="redirect-button">Go to Link</a>
+                </div>
+            </div>
+            <div class="card category3">
+                <div class="card-content">
+                    <h3>Card 3</h3>
+                    <p>Description for Card 3</p>
+                    <a href="#" class="redirect-button">Go to Link</a>
+                </div>
+            </div>
+            <div class="card category1">
+                <div class="card-content">
+                    <h3>Card 4</h3>
+                    <p>Description for Card 4</p>
+                    <a href="#" class="redirect-button">Go to Link</a>
+                </div>
+            </div>
+            <div class="card category2">
+                <div class="card-content">
+                    <h3>Card 5</h3>
+                    <p>Description for Card 5</p>
+                    <a href="#" class="redirect-button">Go to Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
