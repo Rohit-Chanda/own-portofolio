@@ -189,7 +189,7 @@
     top: 20px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 2; /* Ensure it's above the carousel */
     text-align: center;
     width: 100%;
     padding: 0 20px; /* Adjust padding as needed */
@@ -204,8 +204,15 @@
 }
 
 .carousel-item {
-    height: 100vh;
+    height: 100%;
+    position: relative; /* Ensure proper positioning for child elements */
 }
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
 .carousel-item::before {
     content: "";
     position: absolute;
@@ -213,12 +220,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.677); /* Adjust the opacity value (0 to 1) */
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.786); /* Black color with opacity */
+    z-index: 1; /* Overlay should be below the caption but above the image */
 }
 
 .carousel-caption {
-    z-index: 1;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure caption is above the overlay */
+    color: white; /* Ensure text color is visible */
+    padding: 10px;
+    text-align: center;
 }
 
 /* Adjust carousel height for smaller screens */
@@ -234,7 +248,5 @@
     }
 }
 
-.carousel-item img {
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire container */
-}
+
+
