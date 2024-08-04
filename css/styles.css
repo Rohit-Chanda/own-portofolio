@@ -247,6 +247,11 @@
         height: 50vh; /* Adjust as needed */
     }
 }
+/* contact */
 
+.contat img{
+    height: 100vh;
+    object-fit: cover;
+}
 
 
