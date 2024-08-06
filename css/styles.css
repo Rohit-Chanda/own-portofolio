@@ -254,9 +254,6 @@
 .contact-container {
     min-height: 100vh; /* Ensure it covers the viewport height */
     width: 100%;
-    background: linear-gradient(45deg, #a8ff78, #78ffd6, #fddb92, #5374f9);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
     overflow: hidden; /* Prevent content from overflowing */
     display: flex;
     justify-content: center;
@@ -264,7 +261,11 @@
     padding: 20px;
     box-sizing: border-box;
 }
-
+.contact-bg{
+    background: linear-gradient(45deg, #a8ff78, #78ffd6, #fddb92, #5374f9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
 /* Keyframes for Gradient Animation */
 @keyframes gradient {
     0% {
@@ -277,7 +278,15 @@
         background-position: 0% 50%;
     }
 }
-
+.upper-contact-container{
+    align-items: center;
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    
+}
 /* Text Form */
 .text-form {
     display: flex;
@@ -313,9 +322,7 @@
 }
 
 .contact-left h1, .contact-left p {
-    margin-top: -10px;
-    text-align: center;
-    margin: 10px 0; /* Adjust margin for spacing */
+    
 }
 
 /* Contact Right */
@@ -339,3 +346,42 @@
         padding: 0 20px; /* Adjust padding for larger screens */
     }
 }
+/* footer */
+/* 
+
+.footer .nav {
+    margin-bottom: 20px;
+}
+
+.footer .text-body-secondary {
+    color: #6c757d;
+}
+
+.footer .link-body-emphasis {
+    color: #000;
+    transition: color 0.2s;
+}
+
+.footer .link-body-emphasis:hover {
+    color: #0056b3;
+}
+
+.footer .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .list-unstyled {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}*/
+.footer {
+    padding: 20px;
+    
+}
+/* .footer .ms-3 {
+    margin-left: 1rem;
+}  */
+
