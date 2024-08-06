@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <section class="gradient-background d-flex flex-column">
+    <section id="Home" class="gradient-background d-flex flex-column">
         <div class="container-fluid">
             <!-- Navigation bar -->
             <nav class="navbar navbar-expand-lg navbar-light navbar-dark navbar-transparent d-flex flex-wrap align-items-center justify-content-between py-3">
                 <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none col-md-5 mb-2 mb-md-0">
-                    <img class="bi" src="images/code-slash.svg" width="40" height="32" alt="code-slash" role="img" aria-label="code-slash">
+                    <img class="bi" src="images/logo-no-background.png" width="60" height="60" alt="code-slash" role="img" aria-label="code-slash">
                 </a>
                 <button class="navbar-toggler navbar-dark d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,27 +21,30 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
                         <li class="nav-item">
-                            <a href="./index.html" class="btn btn-outline-light bold-btn active" role="button" data-bs-toggle="button" aria-pressed="true">Home</a>
+                            <a href="#Home" class="btn btn-outline-light bold-btn active" role="button" data-bs-toggle="button" aria-pressed="true">Home</a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#About">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle px-2" href="#Projects" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Projects
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#project1">Frontend Projects</a></li>
                                 <li><a class="dropdown-item" href="#project2">Backend Projects</a></li>
                                 <li><a class="dropdown-item" href="#project3">Web Designs</a></li>
+                                <li><a class="dropdown-item" href="#project3">This Part Under Construction❗</a></li>
                                 <!-- Add more dropdown items as needed -->
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-2" href="./about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="./services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2" href="./contact.html">Contact</a>
+                            <a class="nav-link px-2" href="#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -80,7 +83,7 @@
         </div>
     </section>
     <!----services------------>
-    <section class="services d-flex flex-column justify-content-center w-100 flex-grow-1">
+    <section id="Services" class="services d-flex flex-column justify-content-center w-100 flex-grow-1">
         <div>
             <h1 class="fw-bold text-body-emphasis mt-5" style="color: #614385;">My Services</h1>
             <h3>Innovative Solutions for a Digital World</h3>
@@ -119,7 +122,7 @@
         </div>
     </section>
     <!-----About Section--------------->
-    <section class="about-section bg-light py-5">
+    <section id="About" class="about-section bg-light py-5">
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6 text-center">
@@ -146,7 +149,7 @@
     
     
     <!---Project ------------>
-    <section class="project">
+    <section id="Projects" class="project">
         <div class="carousel-header text-center">
             <h1 class="fw-bold text-body-light mb-4" style="color: white;">My Projects</h1>
             <a href="https://github.com/Rohit-Chanda" class="btn btn-lg btn-outline-light">Checkout my <img src="./images/github.png" alt="github" height="20px" width="20px"> </a>
@@ -194,7 +197,7 @@
         </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact">
+    <section id="Contact" class="contact">
         <div class="contact-bg ">
             <div class="upper-contact-container">
                 <h1>Contact Me!</h1>
